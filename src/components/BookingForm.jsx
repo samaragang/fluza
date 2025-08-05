@@ -10,9 +10,8 @@ export default function BookingForm({ flight, onBook }) {
 
   return (
     <form onSubmit={handleSubmit}>
-      соси хуй
-      {/* <h2>Бронирование рейса</h2>
-
+      <h2>Бронирование рейса</h2>
+{/* 
       <p>{flight.from} → {flight.to} | {flight.date} | ${flight.price}</p>
       <input type="text" placeholder="Ваше имя" value={name} onChange={(e) => setName(e.target.value)} required />
       <button type="submit">Подтвердить</button> */}
