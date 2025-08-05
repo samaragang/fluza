@@ -1,0 +1,108 @@
+.flight-list {
+  width: 1000px;
+  padding-top: 40px;
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  margin: 0 auto;
+}
+
+.flight-card {
+  display: flex;
+  justify-content: space-between;
+  background: #fff;
+  padding: 16px 24px;
+  border: 1px solid black;
+}
+
+.flight-details {
+  flex: 1;
+}
+
+.segment-label {
+  display: flex;
+  gap: 10px;
+  font-weight: bold;
+  margin-bottom: 4px;
+  color: black;
+}
+
+.airlines {
+  display: flex;
+  gap: 8px;
+  margin-bottom: 10px;
+}
+
+.airline {
+  background: #f2f2f2;
+  border-radius: 12px;
+  padding: 4px 10px;
+  font-size: 14px;
+  color: #333;
+}
+
+.flight-segment {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.flight-time {
+  width: 30%;
+}
+.flight-time h3{
+  margin: 0;
+  font-size: 30px;
+}
+.segment-info {
+  width: 30%;
+  text-align: center;
+  font-size: 14px;
+  color: #666;
+}
+
+.transfer {
+  display: block;
+  margin-top: 4px;
+}
+
+.flight-price {
+  min-width: 180px;
+  text-align: right;
+  display: flex;
+  flex-direction: column;
+}
+
+.flight-price h2 {
+  font-size: 30px;
+  margin: 0;
+  color: #000;
+  margin-bottom: 8px;
+}
+
+.flight-price button {
+  margin: 0px;
+  padding: 10px 16px;
+  color: white;
+  color: black;
+  border: 1px solid black;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.per-passenger {
+  font-size: 12px;
+  color: #777;
+}
+
+.details-link {
+  background: none;
+  border: none;
+  color: white;
+  font-size: 14px;
+  margin-top: 6px;
+  cursor: pointer;
+  text-align: right;
+}

@@ -1,0 +1,44 @@
+
+body {
+  font-family: "Zen Maru Gothic", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background: none;
+  border: none;
+  text-decoration-line: none;
+}
+
+.container {
+  width: 100%;
+  padding: 0 2%;
+  margin: 0 auto;
+}
+
+input, button {
+  display: block;
+  width: 100%;
+  margin: 0.5rem 0;
+  padding: 0.5rem;
+}
+
+h1 {
+  font-size: 70px;
+  font-family: "Playfair Display", serif;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-style: normal;
+}
+
+h3 {
+  font-size: 22px;
+  font-family: "Zen Maru Gothic", sans-serif;
+  font-weight: 400;
+  letter-spacing: 2.1px;
+  margin-bottom: 10px;
+}
