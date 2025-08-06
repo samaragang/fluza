@@ -1,0 +1,19 @@
+.filters {
+  margin-top: 40px;
+  flex-shrink: 0;
+  width: 300px;
+  border: 1px solid #000000;
+  padding: 15px;
+  height: fit-content;
+}
+
+.filters input {
+  width: 20px;
+  margin: 0;
+  padding: 0;
+  margin-right: 5px;
+}
+
+.filters label {
+  display: flex;
+}

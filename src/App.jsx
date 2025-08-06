@@ -4,6 +4,7 @@ import FlightList from './components/FlightList';
 import BookingForm from './components/BookingForm';
 import Header from './components/Header';
 import './App.css';
+import FlightFilter from './components/FlightFilter';
 
 // [
 //   {
@@ -369,6 +370,7 @@ function App() {
   const [loading, setLoading] = useState(false);
   const [selectedFlight, setSelectedFlight] = useState(null);
   const [booking, setBooking] = useState(null);
+  const [filteredFlights, setFilteredFlights] = useState([]);
 
   const handleSearch = async (params) => {
     setLoading(true);
@@ -405,6 +407,7 @@ function App() {
       const rawFlights = json.data.flights;
 
       setFlights(rawFlights);
+      setFilteredFlights(rawFlights);
       setSelectedFlight(null);
       setBooking(null);
     } catch (error) {
@@ -432,9 +435,11 @@ function App() {
           <>
             <FlightSearchForm onSearch={handleSearch} />
             {loading && <div className="loader-bar"><div className="loader-progress" /></div>}
-            {!loading && flights.length > 0 && <FlightList flights={flights} onSelect={handleSelectFlight} />}
-
-            {flights.length > 0 && <FlightList flights={flights} onSelect={handleSelectFlight} />}
+            {!loading && flights.length > 0 && <div className='flights-content'>
+              <FlightFilter className='flights-filter' flights={flights} onFilter={setFilteredFlights} />
+              <FlightList flights={filteredFlights} onSelect={handleSelectFlight} />
+            </div>
+            }
           </>
         )}
 

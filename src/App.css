@@ -35,3 +35,11 @@
     left: 100%;
   }
 }
+
+
+.flights-content {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  padding: 20px;
+}
